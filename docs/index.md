@@ -1,11 +1,13 @@
-# eROSITA Science Pipelines
-
-eSASS: a short Cookbook-style user guide.
+A short Cookbook-style user guide.
 
 eROSITA information... [eROSITA](http://www.mpe.mpg.de/eROSITA)
 
-Links to the parts of the tutorial
+Components:
+* [Installation](installation/install.md)
 
+* [Simulating eROSITA data](simulating_data/overview.md)
+
+* [Running eSASS](running_eSASS/overview.md)
 
 # Python scripts
 
@@ -14,3 +16,5 @@ Python scripts for running eSASS tasks are found in the GitHub repository: [eSAS
 # Contact
 
 - Provide feedback or report issues [eSASS helpdesk](eROSITA-helpdesk@mpe.mpg.de)
+
+<!-- %enddocs -->
