@@ -1,6 +1,6 @@
-A short Cookbook-style user guide.
+A short Cookbook-style user guide for analysing [eROSITA](http://www.mpe.mpg.de/eROSITA) data.
 
-eROSITA information... [eROSITA](http://www.mpe.mpg.de/eROSITA)
+Written in markdown, so should be easily editable by all.
 
 Components:
 * [Installation](installation/install.md)
