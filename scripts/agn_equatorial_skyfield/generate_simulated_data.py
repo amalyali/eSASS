@@ -9,9 +9,9 @@ import errno
 
 class Simulator:
     """
-    SIXTE simulator for eROSITA observations
-    1. Simulate via erosim
-    2. Calibrate via ero_calevents
+    SIXTE simulator for eROSITA observations.
+    1. Compute GTI file for given simput
+    2. Simulate eROSITA observations of simput, using GTI to speed things up.
     """
     def __init__(self, with_bkg_par, t_start, exposure, seed, simput):
         """
