@@ -20,7 +20,7 @@ class EsassPipeline():
         subdir = self._data_dir
         evt_dir = "%s/events" % subdir
         infile = "%s/merged_agn.fits" % evt_dir
-        outfile = "products"
+        outfile = "products/"
         outfile_suffix = "post"
         suffix_srctool = "_001_t%s" % version
 
