@@ -19,8 +19,12 @@ class EsassPipeline():
         """
         subdir = self._data_dir
         evt_dir = "%s/events" % subdir
+        infile = "%s/merged_agn.fits" % evt_dir
+        outfile = "products"
+        outfile_suffix = "post"
+        suffix_srctool = "_001_t%s" % version
 
-        product_dir = "%s/products"
+        product_dir = "%s/%s" % (subdir, outfile)
         try:
             os.makedirs(product_dir)
         except OSError as e:
@@ -33,11 +37,6 @@ class EsassPipeline():
         except OSError as e:
             if e.errno != errno.EEXIST:
                 raise
-
-        infile = "%s/merged_agn.fits" % evt_dir
-        outfile = product_dir
-        outfile_suffix = "post"
-        suffix_srctool = "_001_t%s" % version
 
         # Choose energy bands for analysis
         emin_ev = [100, 500, 2000, 5000]
@@ -179,9 +178,7 @@ class EsassPipeline():
             index = eband_selected[ii]
             cheesemask.append("%s02%s_CheeseMask_%s" % (os.path.join(subdir, outfile), eband[index], outfile_suffix))
             bkgimage.append("%s02%s_BackgrImage_%s" % (os.path.join(subdir, outfile), eband[index], outfile_suffix))
-            # cheesemask.append("%s_%s_cheesemask.fits" %(os.path.join(subdir,outfile), eband[index]))
-            # bkgimage.append("%s_%s_bkg.fits" %(os.path.join(subdir,outfile), eband[index]))
-            # one command per energy band
+
             cmd = ["erbackmap",
                    "image=%s" % (outfile_evtool[ii]),
                    "expimage=%s" % (expmap_all[ii]),
