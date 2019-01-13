@@ -9,15 +9,15 @@ A photon population is then simulated given this sky model and propagated throug
 set of simulated event files. Note that a spacecraft attitude file to model the time-dependence of eROSITA’s 
 pointing direction.
 
-Further details, including a usage manual, can be found on the [SIXTE](https://www.sternwarte.uni-erlangen.de/research/sixte/index.php) website.
-
+Further details, including a usage manual, can be found on the [SIXTE](https://www.sternwarte.uni-erlangen.de/research/sixte/index.php) website,
+and also the small section on the [eSASS wiki](
 ## Small tricks to speed things up
 ***Check*** the parameters that each task accepts using the command ```plist``` (provided by HEASARC). Changes to input 
 parameter names can sometimes not be updated in code documentation.
 
 1. ```simputverify```- this verifies that the SIMPUT file you want to use in your SIXTE simulator is in the correct file format.
 
-2. ```erovis```- given a SIMPUT file and a spacecraft attitude file, this computes the time intervals when objects within that simput file are within
+2. ```erovis```- given a SIMPUT file and a [spacecraft attitude file](http://www.sternwarte.uni-erlangen.de/research/sixte/data/eRASS_Pc87M55_3dobi_att_remeis.fits.bz2), this computes the time intervals when objects within that simput file are within
 eROSITA's FOV, storing this information in a .gti file. This can then be inputted into an ```erosim``` command,
 such that SIXTE only simulates eROSITA observations during these good time intervals.
 
