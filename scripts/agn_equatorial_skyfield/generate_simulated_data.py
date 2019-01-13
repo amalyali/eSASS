@@ -30,7 +30,7 @@ class Simulator:
 
     def make_event_directory(self):
         """
-        Check for whether a directory exists and create if not.
+        Check for whether directory exists and create if not.
         """
         try:
             os.makedirs(self._data_dir)
@@ -104,7 +104,7 @@ bkg = 1
 t_start = 0.0
 exposure = 15750000
 seed = 42
-simput_file = '../../data/raw/simput/agn/eRosita_eRASS8_simput_2M.fits'
+simput_file = '../../data/agn_equatorial_skyfield/simput/agn_above1e15_seed1.simput'
 
 # Launch...
 Simulator(bkg, t_start, exposure, seed, simput_file).run_all()
