@@ -28,7 +28,8 @@ setup complete
 ```
 
 ## eSASS user releases
-From the ds machines at MPE, setting up of the code is similar to the eSASSdevel case: 
+From the ds machines at MPE, setting up of the code is similar to the eSASSdevel case. 
+For example, to install the most recent user release from 16/4/18:
 
 ```
 source /home/erosita/sw/sass-setup.sh eSASSusers_180416
