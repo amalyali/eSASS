@@ -25,14 +25,13 @@ class PrepareForEsass:
         Prepare event lists from SIXTE simulation for the eSASS pipeline.
         Calibrate event lists from SIXTE (mainly to ensure we have the correct extensions for the FITS files).
         """
-
         for ii in ccds:
             uncal_file = '%s/agn_ccd%s_evt.fits' % (self._data_dir,  ii)
             cal_file = '%s/cal_agn_ccd%s_evt.fits' % (self._data_dir,  ii)
 
             cmd = ["ero_calevents",
                    "Projection=AIT",
-                   "Attitude=./eRASS_Pc87M55_3dobi_att_remeis.fits",
+                   "Attitude=../../data/eRASS_Pc87M55_3dobi_att_remeis.fits",
                    "clobber=yes",
                    "EvtFile=%s" % uncal_file,
                    "eroEvtFile=%s" % cal_file,
@@ -79,7 +78,6 @@ class PrepareForEsass:
                ]
         print(cmd)
         subprocess.check_call(cmd)
-
 
     def prep_and_merge(self):
         self.cal_events()
