@@ -26,7 +26,7 @@ class Simulator:
         self._exposure = float(exposure)
         self._seed = int(seed)
         self._simput = simput
-        self._data_dir = "../../data/agn_equatorial_skyfield/events/"
+        self._data_dir = "../../data/agn_equatorial_skyfield/events"
 
     def make_event_directory(self):
         """
