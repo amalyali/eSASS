@@ -10,8 +10,10 @@ that:
 
 with example datasets found in ```/home/amalyali/data1/eSASS/data``` from the ds machines. 
 
+## Task descriptions
+See the [eSASS wiki](https://wiki.mpe.mpg.de/eRosita/TaskDescriptions) for further details on each task- though page
+could be outdated.
 
 ## Encountered an error?
 ***Check*** the parameters that each task accepts using the command ```plist``` (provided by HEASARC). Changes to input 
 parameter names can sometimes not be updated in code documentation.
-

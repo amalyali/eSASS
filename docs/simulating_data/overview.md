@@ -10,7 +10,8 @@ set of simulated event files. Note that a spacecraft attitude file to model the 
 pointing direction.
 
 Further details, including a usage manual, can be found on the [SIXTE](https://www.sternwarte.uni-erlangen.de/research/sixte/index.php) website,
-and also the small section on the [eSASS wiki](
+and also the small section on the [eSASS wiki](https://wiki.mpe.mpg.de/eRosita/ScienceRelatedStuff/sixte).
+
 ## Small tricks to speed things up
 ***Check*** the parameters that each task accepts using the command ```plist``` (provided by HEASARC). Changes to input 
 parameter names can sometimes not be updated in code documentation.
