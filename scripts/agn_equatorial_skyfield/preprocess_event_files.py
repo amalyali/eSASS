@@ -1,6 +1,5 @@
 """
-After producing the simulated event data using grid_main-v3.py, calibrate it (add on correct extensions to the FITS
-files) and prepare for eSASS.
+Preprocess the simulated event files to make compatible with eSASS.
 
 A. Malyali, 2019. amalyali@mpe.mpg.de
 """
