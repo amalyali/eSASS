@@ -10,18 +10,12 @@ version = "002"
 
 
 class EsassPipeline():
-    def __init__(self, data_dir):
-        """
-        :param id_skyfield: ID of skyfield
-        :param mbh_class: 10^{3.0, 3.5, 4.0, 4.5, 5.0} solar masses
-        :param t_offset: t_first - t_flare. Input units of [days]
-        :param seed: Seed for random number generator
-        """
+    def __init__(self):
         self._data_dir = "../../data/agn_equatorial_skyfield"
 
     def run_pipeline(self):
         """
-        Run all steps of the eSASS analysis in correct order.
+        Run all steps of the eSASS analysis in required order.
         """
         subdir = self._data_dir
         evt_dir = "%s/events" % subdir
@@ -294,8 +288,8 @@ class EsassPipeline():
 
         catprep = "%s020_SourceCatalog_%s" % (os.path.join(subdir, outfile), outfile_suffix)
         cmd = ["catprep",
-               "infile=%s" % (mllist),
-               "outfile=%s" % (catprep),
+               "infile=%s" % mllist,
+               "outfile=%s" % catprep,
                "skymap=../../SKYMAPS.fits"
                ]
         if (do_catprep == True):
@@ -323,3 +317,8 @@ class EsassPipeline():
                 os.mkdir(os.path.join(subdir, srctool_dir))
             print(cmd)
             subprocess.check_call(cmd)
+
+
+# -------
+# Perform eSASS run
+EsassPipeline().run_pipeline()
