@@ -1,11 +1,4 @@
 # Running eSASS
-## Data Processing and Analysis Primer
-* [Event Processing and Image Creation](1.md)
-* [Spectra Extraction](spec.md)
-* [Light Curve](2.md)
-* [Source Detection](3.md)
-* [Pileup](4.md)
-
 ## AGN equatorial skyfield example
 
 There is an [AGN equatorial skyfield](../../scripts/agn_equatorial_skyfield) repository, which contains a set of scripts
@@ -16,6 +9,13 @@ that:
 3. ```run_esass_analysis.py```: Run the eSASS analysis of the event files.
 
 with example datasets found in ```/home/amalyali/data1/eSASS/data``` from the ds machines. 
+
+## Data Processing and Analysis Primer
+* [Event Processing and Image Creation](1.md) *TODO*
+* [Spectra Extraction](spec.md) *TODO*
+* [Light Curve](2.md) *TODO*
+* [Source Detection](3.md) *TODO*
+* [Pileup](4.md) *TODO*
 
 ## Task descriptions
 See the [eSASS wiki](https://wiki.mpe.mpg.de/eRosita/TaskDescriptions) for further details on each task- though page
