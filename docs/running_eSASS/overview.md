@@ -1,4 +1,11 @@
 # Running eSASS
+## Data Processing and Analysis Primer
+* [Event Processing and Image Creation](1.md)
+* [Spectra Extraction](spec.md)
+* [Light Curve](2.md)
+* [Source Detection](3.md)
+* [Pileup](4.md)
+
 ## AGN equatorial skyfield example
 
 There is an [AGN equatorial skyfield](../../scripts/agn_equatorial_skyfield) repository, which contains a set of scripts
