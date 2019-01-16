@@ -1,7 +1,7 @@
 # Running eSASS
 ## AGN equatorial skyfield example
 
-There is an [AGN equatorial skyfield](../../scripts/agn_equatorial_skyfield) repository, which contains a set of scripts
+There is an [AGN equatorial skyfield](https://github.com/amalyali/eSASS/tree/master/scripts/agn_equatorial_skyfield) repository, which contains a set of scripts
 that:
 
 1. ```generate_simulated_data.py```: Run a SIXTE simulation of an AGN equatorial skyfield, starting from a simput file .
