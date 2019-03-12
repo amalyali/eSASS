@@ -7,8 +7,7 @@ There are two different types of eSASS installation:
 2. An eSASS user release
 
 The development version is recommended over older user releases as bugs identified within the latest user release may have been fixed.
-If you plan to base your work on the ds machines at MPE, then your best option is to follow the steps presented for setting
-up eSASS devel.
+In addition, make sure that you are simulating your eROSITA data using the latest version of SIXTE available.
 
 ## eSASS devel
 This will be the most up-to-date version of eSASS. To setup the code for usage on the ds machines at MPE, simply run the line

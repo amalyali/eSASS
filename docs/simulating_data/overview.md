@@ -1,21 +1,18 @@
 # Simulating eROSITA observations with SIXTE
 
 ## Brief overview
-SIXTE is an end-to-end simulator for X-ray observations. requires defining an instrument-independent sky model, contained in a 
-simput file (with details of each source’s sky position, flux in a reference energy band, X-ray spectrum, light curve, image if 
-an extended object); and also an instrument description file. 
+SIXTE is an end-to-end simulator for X-ray observations. It requires defining an instrument-independent sky model in a 
+simput file (this effectively provides details of each source’s sky position, flux in a reference energy band, X-ray spectrum, light curve, image if 
+an extended object); and also an instrument description file. In addition, a spacecraft attitude file is required to model the time-dependence of eROSITA’s 
+pointing direction.
 
 A photon population is then simulated given this sky model and propagated through the instrument model to produce a 
-set of simulated event files. Note that a spacecraft attitude file to model the time-dependence of eROSITA’s 
-pointing direction.
+set of simulated event files. 
 
 Further details, including a usage manual, can be found on the [SIXTE](https://www.sternwarte.uni-erlangen.de/research/sixte/index.php) website,
 and also the small section on the [eSASS wiki](https://wiki.mpe.mpg.de/eRosita/ScienceRelatedStuff/sixte).
 
 ## Small tricks to speed things up
-***Check*** the parameters that each task accepts using the command ```plist``` (provided by HEASARC). Changes to input 
-parameter names can sometimes not be updated in code documentation.
-
 1. ```simputverify```- this verifies that the SIMPUT file you want to use in your SIXTE simulator is in the correct file format.
 
 2. ```erovis```- given a SIMPUT file and a [spacecraft attitude file](http://www.sternwarte.uni-erlangen.de/research/sixte/data/eRASS_Pc87M55_3dobi_att_remeis.fits.bz2), this computes the time intervals when objects within that simput file are within
@@ -23,6 +20,9 @@ eROSITA's FOV, storing this information in a .gti file. This can then be inputte
 such that SIXTE only simulates eROSITA observations during these good time intervals.
 
 3. Simput file structure for large simulation sets
+
+***Check*** the parameters that each task accepts using the command ```plist``` (provided by HEASARC). Changes to input 
+parameter names can sometimes not be updated in code documentation.
 
 Further useful tips can be found throughout [Katharina Borm's PhD thesis](http://hss.ulb.uni-bonn.de/2016/4329/4329.pdf), 
 though a number of parameters used may have had minor name changes.
