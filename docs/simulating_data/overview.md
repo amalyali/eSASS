@@ -1,5 +1,9 @@
 # Simulating eROSITA observations with SIXTE
 
+Python scripts for SIXTE simulations of eROSITA observations can be found [here](https://github.com/amalyali/eSASS).
+
+Below are some basic notes/tips on using SIXTE.
+
 ## Brief overview
 SIXTE is an end-to-end simulator for X-ray observations. It requires defining an instrument-independent sky model in a 
 simput file (this effectively provides details of each source’s sky position, flux in a reference energy band, X-ray spectrum, light curve, image if 
