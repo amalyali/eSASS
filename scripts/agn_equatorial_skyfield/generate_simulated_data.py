@@ -98,13 +98,13 @@ class Simulator:
         self.run_sixte()
 
 
-# -------
-# Define parameters for simulation
-bkg = 1
-t_start = 0.0
-exposure = 15750000
-seed = 42
-simput_file = '../../data/agn_equatorial_skyfield/simput/agn_above1e15_seed1.simput'
+if __name__ == '__main__':
+    # Define parameters for simulation
+    bkg = 1
+    t_start = 0.0
+    exposure = 15750000
+    seed = 42
+    simput_file = '../../data/agn_equatorial_skyfield/simput/agn_above1e15_seed1.simput'
 
-# Launch...
-Simulator(bkg, t_start, exposure, seed, simput_file).run_all()
+    # Launch...
+    Simulator(bkg, t_start, exposure, seed, simput_file).run_all()

@@ -82,10 +82,10 @@ class PrepareForEsass:
         self.merge_cal_events_across_ccds()
 
 
-# -------
-# Define parameters for simulation
-ra_cen = 1.5
-dec_cen = 0.0
+if __name__ == '__main__':
+    # Define parameters for simulation
+    ra_cen = 1.5
+    dec_cen = 0.0
 
-# Preprocess event files...
-PrepareForEsass(ra_cen, dec_cen).prep_and_merge()
+    # Preprocess event files...
+    PrepareForEsass(ra_cen, dec_cen).prep_and_merge()

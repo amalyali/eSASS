@@ -316,6 +316,6 @@ class EsassPipeline():
             subprocess.check_call(cmd)
 
 
-# -------
-# Perform eSASS run
-EsassPipeline().run_pipeline()
+if __name__ == '__main__':
+    # Perform eSASS run
+    EsassPipeline().run_pipeline()
